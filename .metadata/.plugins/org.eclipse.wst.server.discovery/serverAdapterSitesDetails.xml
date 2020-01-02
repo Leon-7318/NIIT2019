@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extensionDetails>
+  <feature description="Resin Eclipse Plugin based on WebTools Generic Server." id="com.caucho.resin.eclipse.feature.group" name="Resin (Java EE Web Profile) Server" provider="Resin" uri="http://www.caucho.com/eclipse/" version="4.0.27"/>
+  <feature description="JOPE (JOnAS Plugin for Eclipse) is an open source JOnAS plugin for Eclipse." id="org.ow2.jonas.wtp.adapter.feature.group" name="Jonas WTP Adapter" provider="OW2" uri="http://jope.ow2.org/update/jope/" version="5.1.2"/>
+  <feature description="Extended tools for developing and administering WebSphere® Application Server Liberty" id="com.ibm.ws.st.tools.base.feature.group" name="WebSphere® Application Server Liberty Extended Tools" provider="IBM" serverId="com.ibm.ws.st.server.wlp" uri="http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/updates/libertyAdapter/mars/" version="1.0.552.v20170227_1658"/>
+  <feature description="Server adapter for the SAP NetWeaver Application Server. Supports J2EE 1.4 and Java EE 5 modules." id="com.sap.netweaver.porta.ide.eclipse.feature.feature.group" name="SAP NetWeaver Server Adapter" provider="SAP" uri="http://master.dl.sourceforge.net/project/sapnweclipse/updates/" version="0.7.2.201006211643"/>
+</extensionDetails>
