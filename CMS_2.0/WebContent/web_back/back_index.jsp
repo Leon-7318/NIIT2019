@@ -102,7 +102,7 @@
 		</div>
 		<!-- 底部 -->
 		<div class="layui-footer footer">
-            <p>copyright @2019 Leon</p>
+            <p>copyright @2020 Leon</p>
 		</div>
 	</div>
 

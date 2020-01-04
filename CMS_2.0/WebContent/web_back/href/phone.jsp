@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="refresh" content="0; url=${pageContext.request.contextPath }/product/showProducts?type=other" />
+<meta http-equiv="refresh" content="0; url=${pageContext.request.contextPath }/product/showProducts?type=phone" />
 <title>Insert title here</title>
 </head>
 <body>
