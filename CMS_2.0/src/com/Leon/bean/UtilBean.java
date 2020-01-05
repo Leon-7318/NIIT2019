@@ -24,7 +24,10 @@ public class UtilBean implements Serializable {
 	}
 
 	public String getResourceUrl(String location) {
-		if (location != null && location.contains("front_index"))
+		String[] str = location.split("\\/");
+		String page = str[str.length - 1].split("\\.")[0];
+		System.out.println("liang : " + page);
+		if (page != null && "front_index".equals(page))
 			return "assets";
 		else
 			return "../assets";
