@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Component()
 public class UtilBean implements Serializable {
 	private Integer k = 0;
-	
+
 	public UtilBean() {
 	}
 
@@ -22,18 +22,25 @@ public class UtilBean implements Serializable {
 		SimpleDateFormat sdf = new SimpleDateFormat(" yyyy . MM.dd . E");
 		return sdf.format(new Date());
 	}
-	
-    public void uploadFile(MultipartFile file, String path, String fileName){
-    	try {
-	    	//新建文件
-	        File file1 = new File(path, fileName);
-	        //将文件写入
+
+	public String getResourceUrl(String location) {
+		if (location != null && location.contains("front_index"))
+			return "assets";
+		else
+			return "../assets";
+	}
+
+	public void uploadFile(MultipartFile file, String path, String fileName) {
+		try {
+			// 新建文件
+			File file1 = new File(path, fileName);
+			// 将文件写入
 			file.transferTo(file1);
 		} catch (Exception e) {
 			e.printStackTrace();
-		} 
-    }
-	
+		}
+	}
+
 	public Integer getK() {
 		return k;
 	}
@@ -41,5 +48,5 @@ public class UtilBean implements Serializable {
 	public void setK(Integer k) {
 		this.k = k;
 	}
-	
+
 }

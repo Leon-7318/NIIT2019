@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <section id="header_section_wrapper" class="header_section_wrapper">
 	<div class="container">
 		<div class="header-section">
@@ -26,7 +27,8 @@
 				</div>
 				<div class="col-md-4">
 					<div class="logo">
-						<a href="#"><img src="../assets/img/logo.png" alt="Tech NewsLogo" /></a>
+						<a href="${pageContext.request.contextPath }/front/fff"> <img
+							src="${util.getResourceUrl(pageContext.request.getServletPath())}/img/logo.png" alt="Tech NewsLogo" /></a>
 					</div>
 					<!-- Logo Section -->
 				</div>
@@ -54,7 +56,7 @@
 							<!--<li class="active"><a>首页</a></li>-->
 							<%--* 跳转页面 --%>
 							<li class="active"><a
-								href="${pageContext.request.contextPath }/front/home">首页</a></li>
+								href="${pageContext.request.contextPath }/front/fff">首页</a></li>
 							<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 							<li><a
 								href="${pageContext.request.contextPath }/conf/showRefreh">发布会</a></li>

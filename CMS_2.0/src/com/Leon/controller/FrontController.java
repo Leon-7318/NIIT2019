@@ -49,12 +49,17 @@ public class FrontController {
 	@RequestMapping(value = "fff")
 	public String init(HttpSession session) {
 		util.setK(0);
-		session.setAttribute("util", util);
-		session.setAttribute("conf", conf);
-		session.setAttribute("news", news);
-		session.setAttribute("product", product);
-		session.setAttribute("video", video);
-		
+		if (session.getAttribute("util") == null)
+			session.setAttribute("util", util);
+		if (session.getAttribute("conf") == null)
+			session.setAttribute("conf", conf);
+		if (session.getAttribute("news") == null)
+			session.setAttribute("news", news);
+		if (session.getAttribute("product") == null)
+			session.setAttribute("product", product);
+		if (session.getAttribute("video") == null)
+			session.setAttribute("video", video);
+
 		return "redirect:/web_front/front_index.jsp";
 	}
 
@@ -71,7 +76,7 @@ public class FrontController {
 	@RequestMapping(value = "login")
 	public String login(@RequestParam(value = "k") Integer k, @RequestParam(value = "username") String username,
 			@RequestParam(value = "password") String password, HttpSession session) {
-		
+
 		UtilBean util = (UtilBean) session.getAttribute("util");
 		ConferenceBean c = (ConferenceBean) session.getAttribute("conf");
 		NewBean n = (NewBean) session.getAttribute("news");
