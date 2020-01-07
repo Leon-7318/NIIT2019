@@ -128,7 +128,7 @@
 
 		<Context docBase="C:\Users\mi\Desktop\NIIT_Project\project\NIIT2019\CMS_2.0\WebContent\resource\video\" path="/video" reloadable="true"/>
 	
-      <Context docBase="CMS_2.0" path="/CMS_2.0" reloadable="true" source="org.eclipse.jst.jee.server:CMS_2.0"/></Host>
+      <Context docBase="PifutanSSM" path="/PifutanSSM" reloadable="true" source="org.eclipse.jst.jee.server:PifutanSSM"/></Host>
     </Engine>
   </Service>
 </Server>

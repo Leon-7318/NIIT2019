@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="context1">
+		<jdbcConnection
+			connectionURL="jdbc:mysql://localhost:3306/cms?useUnicode=true&amp;characterEncoding=utf-8"
+			driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+		<javaModelGenerator targetPackage="com.Leon.entity"
+			targetProject="CMS_2.0/src" />
+		<javaClientGenerator targetPackage="com.Leon.mapper"
+			targetProject="CMS_2.0/src" type="XMLMAPPER" />
+		<table schema="cms" tableName="conference">
+			<!-- <columnOverride column="???" property="???" /> -->
+		</table>
+		<table schema="cms" tableName="manager" />
+		<table schema="cms" tableName="new" domainObjectName="news"/>
+		<table schema="cms" tableName="product" />
+		<table schema="cms" tableName="users" />
+		<table schema="cms" tableName="video" />
+
+	</context>
+</generatorConfiguration>
